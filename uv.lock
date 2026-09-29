@@ -634,6 +634,19 @@ wheels = [
 ]
 
 [[package]]
+name = "lorarf"
+version = "1.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "rpi-gpio" },
+    { name = "spidev" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/20/0c/8d68be030540edeada07a19dd653ea6874eefedea7084f770f83fb9cdd87/LoRaRF-1.4.0.tar.gz", hash = "sha256:ac28e7d5adebfc176b7d9d0cf70a0ad8627f589c3f808664d2fce2c64f0ac9b5", size = 22412, upload-time = "2022-09-25T07:42:06.3Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e6/23/1baf7097c6a60e73b366b3770e50795847acea555548fb877831a4fc29e6/LoRaRF-1.4.0-py3-none-any.whl", hash = "sha256:8c2a918dacbdd255cefca61a91af5518e9997128083f7015114139ea14bc3c96", size = 23309, upload-time = "2022-09-25T07:42:04.36Z" },
+]
+
+[[package]]
 name = "markupsafe"
 version = "3.0.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1328,6 +1341,12 @@ wheels = [
 ]
 
 [[package]]
+name = "rpi-gpio"
+version = "0.7.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c4/0f/10b524a12b3445af1c607c27b2f5ed122ef55756e29942900e5c950735f2/RPi.GPIO-0.7.1.tar.gz", hash = "sha256:cd61c4b03c37b62bba4a5acfea9862749c33c618e0295e7e90aa4713fb373b70", size = 29090, upload-time = "2022-02-06T15:15:06.022Z" }
+
+[[package]]
 name = "scipy"
 version = "1.18.1"
 source = { registry = "https://pypi.org/simple" }
@@ -1420,6 +1439,12 @@ wheels = [
 ]
 
 [[package]]
+name = "spidev"
+version = "3.8"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/67/87/039b6eeea781598015b538691bc174cc0bf77df9d4d2d3b8bf9245c0de8c/spidev-3.8.tar.gz", hash = "sha256:2bc02fb8c6312d519ebf1f4331067427c0921d3f77b8bcaf05189a2e8b8382c0", size = 13893, upload-time = "2025-09-15T18:56:20.672Z" }
+
+[[package]]
 name = "ssg-tracker"
 version = "0.1.0"
 source = { virtual = "." }
@@ -1428,6 +1453,7 @@ dependencies = [
     { name = "cython" },
     { name = "folium" },
     { name = "geopy" },
+    { name = "lorarf" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "pandas" },
@@ -1447,6 +1473,7 @@ requires-dist = [
     { name = "cython", specifier = ">=3.3.0" },
     { name = "folium", specifier = ">=0.20.0" },
     { name = "geopy", specifier = ">=2.5.0" },
+    { name = "lorarf", specifier = ">=1.4.0" },
     { name = "matplotlib", specifier = ">=3.11.1" },
     { name = "numpy", specifier = ">=2.5.2" },
     { name = "pandas", specifier = ">=3.0.5" },
