@@ -2,19 +2,16 @@
 lora_connection.py
 Handle connections for LoRa radio using necessary libraries. 
 
-NOTE: some people from comms will be needed to get necessary pins. 
+use pyserial to handle connection between microcontroller (pi?) 
+and a laptop. 
+either user pynmeagps to handle NMEA data or make our own protocol. 
+
+choices: can either make direct implementations or something more abstract with 
+connectors. 
+
 """
 
-import LoRaRF as LoRa;
 
-def connect() -> int:
-    # connect to the lora module
-    lora = LoRa.SX127x()
-    lora.setFrequency(915000000)
-    lora.setRxGain(lora.RX_GAIN_POWER_SAVING)
-    if lora.begin() != 1:
-        print("Issue starting communication. Please try again.")
-    print("LoRa connection started with no issues.")
 
 
 
